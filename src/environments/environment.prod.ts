@@ -18,7 +18,7 @@ export const environment = {
    * For a project repo: https://YOUR_USERNAME.github.io/nanda-portfolio
    * For YOUR_USERNAME.github.io repo: https://YOUR_USERNAME.github.io
    */
-  siteUrl: 'https://nandathuyein.github.io',
+  siteUrl: 'https://nandathuyein.github.io/portfolio',
   /** Repository name — used as the GitHub Pages base href. */
   repoName: 'portfolio'
 };
