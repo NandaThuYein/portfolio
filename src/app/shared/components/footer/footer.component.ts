@@ -38,8 +38,8 @@ import { SocialLinks } from '../../../core/models';
         </div>
       </div>
       <div class="container footer__bottom">
-        <p class="footer__copy">© {{ year }} Nanda. All rights reserved.</p>
-        <p class="footer__built">Built with Angular &amp; Spring.</p>
+        <p class="footer__copy">© {{ year }} Nanda Thu Yein. All rights reserved.</p>
+        <p class="footer__built">Built with Angular &amp; JSON.</p>
       </div>
     </footer>
   `,

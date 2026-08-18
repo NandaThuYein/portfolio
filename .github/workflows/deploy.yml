@@ -17,8 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -31,15 +33,8 @@ jobs:
 
       - name: Build Angular app
         run: npm run build -- --configuration production
-        env:
-          # Optional: override githubUsername / contactFormUrl at build time.
-          # Values are PUBLIC — never put secrets here.
-          # NG_APP_GITHUB_USERNAME: ${{ vars.GITHUB_USERNAME }}
-          # NG_APP_CONTACT_FORM_URL: ${{ vars.CONTACT_FORM_URL }}
 
       - name: Add GitHub Pages 404 fallback
-        # Copies index.html to 404.html so deep links work on GitHub Pages
-        # without hash routing.
         run: |
           cp dist/nanda-portfolio/browser/index.html \
              dist/nanda-portfolio/browser/404.html
@@ -55,9 +50,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
