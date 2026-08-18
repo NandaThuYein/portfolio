@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: git commit -m "fix: configure GitHub Pages base href"
+        run: npm run build -- --configuration production --base-href /portfolio/
 
       - name: Add GitHub Pages 404 fallback
         run: |
