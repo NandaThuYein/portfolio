@@ -1,0 +1,204 @@
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <span class="section-eyebrow">{{ profile?.availability || 'Java & Backend Developer' }}</span>
+      <h1 class="hero__title">{{ profile?.name || 'Nanda' }}</h1>
+      <p class="hero__role">{{ profile?.title || 'Java & Backend Developer' }}</p>
+      <p class="hero__desc">
+        I build reliable, secure and scalable backend systems, REST APIs and
+        enterprise applications.
+      </p>
+
+      <div class="hero__actions">
+        <a routerLink="/projects" class="btn btn-primary">View Projects</a>
+        <a [href]="cvPath" download class="btn btn-outline">Download CV</a>
+        <a routerLink="/contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero__social" *ngIf="social">
+        <app-social-links [links]="social" />
+      </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="hero__terminal">
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">nanda &#64; portfolio: ~</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">whoami</span></div>
+          <div class="terminal-out">{{ profile?.terminal?.whoami || 'nanda' }}</div>
+          <div class="mt-2"></div>
+          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">stack</span></div>
+          <div class="terminal-out" *ngFor="let s of profile?.terminal?.stack || []">{{ s }}</div>
+          <div class="mt-2"></div>
+          <div><span class="terminal-prompt">$</span><span class="terminal-cmd">status</span></div>
+          <div class="terminal-out">{{ profile?.terminal?.status || 'Building reliable software.' }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH HIGHLIGHTS ============ -->
+<section class="section-sm">
+  <div class="container">
+    <div class="tech-highlights">
+      <div
+        class="tech-highlight"
+        *ngFor="let area of profile?.focusAreas || []"
+      >
+        <span class="tech-highlight__dot"></span>
+        <span class="tech-highlight__name">{{ area }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT PREVIEW ============ -->
+<section class="section">
+  <div class="container">
+    <app-section-title
+      eyebrow="// About"
+      title="Backend-focused, enterprise-minded"
+      subtitle="I work primarily with Java, Spring Boot and PostgreSQL — designing REST APIs, integrating third-party services and modernizing legacy enterprise applications."
+    />
+    <div class="about-preview">
+      <p class="about-preview__lead">{{ profile?.longDescription }}</p>
+      <a routerLink="/about" class="btn btn-outline">More about me →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <app-section-title
+      eyebrow="// Projects"
+      title="Featured work"
+      subtitle="A selection of enterprise and integration projects I've worked on."
+    />
+    <div class="projects-grid" *ngIf="!loading(); else loadTpl">
+      <app-project-card *ngFor="let p of featured" [project]="p" />
+    </div>
+    <ng-template #loadTpl>
+      <app-loading [block]="true" message="Loading projects..." />
+    </ng-template>
+    <div class="mt-6 text-center">
+      <a routerLink="/projects" class="btn btn-outline">All projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS PREVIEW ============ -->
+<section class="section">
+  <div class="container">
+    <app-section-title
+      eyebrow="// Skills"
+      title="Technology stack"
+      subtitle="A working knowledge across backend, database, integration, frontend, DevOps and tooling."
+    />
+    <div class="skills-preview">
+      <div class="skill-group" *ngFor="let g of skillGroups.slice(0, 3)">
+        <h3 class="skill-group__title">{{ g.category }}</h3>
+        <div class="skill-group__chips">
+          <app-technology-badge
+            *ngFor="let s of g.skills.slice(0, 6)"
+            [name]="s.name"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 text-center">
+      <a routerLink="/skills" class="btn btn-outline">View all skills →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE PREVIEW ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <app-section-title
+      eyebrow="// Experience"
+      title="Career so far"
+    />
+    <div class="exp-preview">
+      <article class="exp-card card" *ngFor="let e of experiences">
+        <header class="exp-card__header">
+          <h3 class="exp-card__role">{{ e.position }}</h3>
+          <span class="badge">{{ e.startDate }} – {{ e.endDate }}</span>
+        </header>
+        <p class="exp-card__company">{{ e.company }} · {{ e.location }}</p>
+        <p class="exp-card__desc">{{ e.description }}</p>
+      </article>
+    </div>
+    <div class="mt-6 text-center">
+      <a routerLink="/experience" class="btn btn-outline">Full timeline →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GITHUB PREVIEW ============ -->
+<section class="section">
+  <div class="container">
+    <div class="gh-preview">
+      <div class="gh-preview__content">
+        <span class="section-eyebrow">// GitHub</span>
+        <h2 class="section-title">Open-source &amp; public repositories</h2>
+        <p class="section-subtitle">
+          Browse my public GitHub repositories — including personal projects,
+          experiments and tooling around the Spring Boot ecosystem.
+        </p>
+        <a routerLink="/github" class="btn btn-primary">View GitHub profile →</a>
+      </div>
+      <div class="gh-preview__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="80" height="80" fill="currentColor">
+          <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV SECTION ============ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="cv-section">
+      <div>
+        <span class="section-eyebrow">// Resume</span>
+        <h2 class="section-title">Download my CV</h2>
+        <p class="section-subtitle">
+          A one-page summary of my background, skills and project history.
+          Available as a PDF.
+        </p>
+      </div>
+      <div class="cv-section__actions">
+        <a [href]="cvPath" target="_blank" rel="noopener" class="btn btn-primary">View CV</a>
+        <a [href]="cvPath" download class="btn btn-outline">Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-cta">
+      <span class="section-eyebrow">// Contact</span>
+      <h2 class="section-title">Let's build something reliable.</h2>
+      <p class="section-subtitle">
+        Available for backend / Java / Spring Boot opportunities.
+        Reach out via email or any of the channels below.
+      </p>
+      <div class="contact-cta__actions">
+        <a routerLink="/contact" class="btn btn-primary">Get in touch</a>
+        <a *ngIf="social?.email" [href]="social!.email" class="btn btn-outline">Send an email</a>
+      </div>
+    </div>
+  </div>
+</section>

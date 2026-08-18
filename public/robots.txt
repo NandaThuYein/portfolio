@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (replace YOUR_USERNAME with your real GitHub username / custom domain)
+Sitemap: https://nandathuyein.github.io/sitemap.xml

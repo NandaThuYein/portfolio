@@ -1,0 +1,190 @@
+{
+  "projects": [
+    {
+      "id": "ftth-billing",
+      "title": "FTTH Billing System",
+      "slug": "ftth-billing-system",
+      "description": "Enterprise billing platform supporting products, pricing, promotions, discounts, vouchers, subscribers and billing APIs.",
+      "longDescription": "An enterprise Fiber-to-the-Home (FTTH) billing platform built to support the full subscriber lifecycle: product catalog, pricing plans, promotions, discounts, vouchers, subscriber management and invoicing through REST APIs. The system is designed as a set of collaborating services with clear boundaries so that billing, subscriber management and product configuration can evolve independently. The API surface is REST-based and consumed by internal portals and partner integrations. The platform emphasizes correctness of money handling, auditability of pricing changes and reliable invoicing workflows.",
+      "technologies": ["Java", "Spring Boot", "PostgreSQL", "REST API", "Microservices"],
+      "category": "Enterprise",
+      "featured": true,
+      "image": "assets/images/ftth-billing.webp",
+      "highlights": [
+        "Product catalog with pricing plans and promotion rules",
+        "Subscriber lifecycle including activation, suspension and termination",
+        "Voucher and discount engine exposed through REST APIs",
+        "Auditable billing runs with stable money handling"
+      ],
+      "responsibilities": [
+        "Designed and implemented REST APIs for subscriber and billing management",
+        "Modeled pricing, promotions and discounts with extensibility in mind",
+        "Built voucher support and validation rules",
+        "Ensured auditability of billing changes"
+      ]
+    },
+    {
+      "id": "stock-exchange",
+      "title": "Stock Exchange System (Modification)",
+      "slug": "stock-exchange-system",
+      "description": "Modification and enhancement of an existing Stock Exchange System, focusing on business functionality, system behavior, integrations and maintainability.",
+      "longDescription": "A modification and enhancement engagement on an existing Stock Exchange System. The work focused on improving business functionality, system behavior, integrations and maintainability rather than a greenfield rewrite. Changes were introduced incrementally and validated against existing behavior to avoid regressions in a sensitive domain where correctness of order handling, market data and audit trails is critical. Special attention was paid to preserving invariants, improving integration points and making the codebase easier to evolve safely.",
+      "technologies": ["Java", "Spring Boot", "REST API", "Database", "System Integration"],
+      "category": "Enterprise",
+      "featured": true,
+      "image": "assets/images/stock-exchange.webp",
+      "highlights": [
+        "Incremental enhancements without disrupting existing behavior",
+        "Improved integration points with external systems",
+        "Strengthened auditability and traceability of changes",
+        "Improved maintainability of long-lived modules"
+      ],
+      "responsibilities": [
+        "Analyzed and modified business functionality in an existing system",
+        "Improved integration points with external services",
+        "Preserved existing data-access and behavioral contracts",
+        "Improved maintainability of long-lived modules"
+      ]
+    },
+    {
+      "id": "jlpt-form-system",
+      "title": "Japanese-Language Proficiency Test (JLPT) — Individual Form System",
+      "slug": "jlpt-form-system",
+      "description": "Form management system supporting Individual applicants and registration/application workflows.",
+      "longDescription": "A form management system supporting the Japanese-Language Proficiency Test (JLPT) application process for Individual applicants. The system handles distinct application workflows per applicant type, manages form state across the registration lifecycle, and exposes a REST API consumed by the public-facing site at https://jlpt-maja.org.mm/. The design emphasizes correct applicant data handling, validation rules per applicant type and reliable submission workflows.",
+      "technologies": ["Java", "Spring Boot", "REST API", "Database", "Form Management"],
+      "category": "Application System",
+      "featured": true,
+      "website": "https://jlpt-maja.org.mm/",
+      "image": "assets/images/jlpt.webp",
+      "highlights": [
+        "Distinct workflows for Individual applicants",
+        "Validation rules tailored to each applicant type",
+        "REST API consumed by the public registration site",
+        "Auditable submission lifecycle"
+      ],
+      "responsibilities": [
+        "Designed form management workflows for Individual applicants",
+        "Implemented REST APIs backing the public registration site",
+        "Modeled validation rules per applicant type",
+        "Maintained auditable submission lifecycle"
+      ]
+    },
+    {
+      "id": "jlpt-school-form-system",
+      "title": "Japanese-Language Proficiency Test (JLPT) — School Form System",
+      "slug": "jlpt-school-form-system",
+      "description": "Form management system supporting School applicants and registration/application workflows.",
+      "longDescription": "A form management system supporting the Japanese-Language Proficiency Test (JLPT) application process for School applicants. The system handles distinct application workflows per applicant type, manages form state across the registration lifecycle, and exposes a REST API consumed by the public-facing site at https://schoolform.jlpt-maja.org.mm/. The design emphasizes correct applicant data handling, validation rules per applicant type and reliable submission workflows.",
+      "technologies": ["Java", "Spring Boot", "REST API", "Database", "Form Management"],
+      "category": "Application System",
+      "featured": true,
+      "website": "https://schoolform.jlpt-maja.org.mm/",
+      "image": "assets/images/jlpt.webp",
+      "highlights": [
+        "Distinct workflows for School applicants",
+        "Validation rules tailored to each applicant type",
+        "REST API consumed by the public registration site",
+        "Auditable submission lifecycle"
+      ],
+      "responsibilities": [
+        "Designed form management workflows for School applicants",
+        "Implemented REST APIs backing the public registration site",
+        "Modeled validation rules per applicant type",
+        "Maintained auditable submission lifecycle"
+      ]
+    },
+    {
+      "id": "examiner-allocation",
+      "title": "Examiner Allocation System",
+      "slug": "examiner-allocation-system",
+      "description": "System for managing and allocating examiners to examination activities based on examination requirements and examiner information.",
+      "longDescription": "A management system for organizing and allocating examiners to examination activities. The system maintains examiner information and examination requirements, then produces allocations that respect constraints such as availability, capacity and conflict rules. The backend exposes a REST API used by administrators to manage examiners, examinations and allocations, and to track allocation status over time. The goal is to reduce manual coordination effort and provide a clear, auditable allocation process.",
+      "technologies": ["Java", "Spring Boot", "REST API", "Database", "Allocation Management"],
+      "category": "Management System",
+      "featured": true,
+      "image": "assets/images/examiner-allocation.webp",
+      "highlights": [
+        "Examiner profile and availability management",
+        "Examination requirement capture",
+        "Constraint-aware allocation workflow",
+        "REST API for administrators"
+      ],
+      "responsibilities": [
+        "Designed examiner and examination data models",
+        "Implemented allocation workflow with constraint awareness",
+        "Exposed REST APIs for administrator operations",
+        "Maintained allocation history for audit"
+      ]
+    },
+    {
+      "id": "sms-migration",
+      "title": "SMS Migration",
+      "slug": "sms-migration",
+      "description": "Modernization of a legacy Java application while preserving business logic and existing data-access behavior.",
+      "longDescription": "A modernization engagement on a legacy Java SMS application. The objective was to migrate the application to a more maintainable stack while preserving existing business logic and data-access behavior. The migration incrementally moved functionality from a JSF / PrimeFaces front-end and MyBatis persistence layer toward Spring Boot and Jakarta EE conventions, without rewriting years of accumulated business rules. The work prioritized behavioral parity, low-risk incremental migration and improved maintainability for future changes.",
+      "technologies": ["Java", "Spring Boot", "Jakarta", "JSF", "PrimeFaces", "MyBatis"],
+      "category": "Migration",
+      "featured": false,
+      "image": "assets/images/sms-migration.webp",
+      "highlights": [
+        "Incremental migration preserving business logic",
+        "Behavioral parity for data-access layer",
+        "Reduced legacy surface area over time",
+        "Improved maintainability for future changes"
+      ],
+      "responsibilities": [
+        "Migrated legacy modules toward Spring Boot incrementally",
+        "Preserved existing data-access behavior during migration",
+        "Reduced reliance on legacy JSF / PrimeFaces components",
+        "Maintained behavioral parity for end users"
+      ]
+    },
+    {
+      "id": "payment-gateway-integration",
+      "title": "Payment Gateway Integration",
+      "slug": "payment-gateway-integration",
+      "description": "Secure payment integration supporting authenticated APIs, transaction processing, callback handling and webhook processing.",
+      "longDescription": "A payment gateway integration supporting authenticated API access, transaction processing, callback handling and webhook processing. The integration exposes a clean internal API for initiating payments, while delegating to the gateway for the actual money flow. Special attention is paid to security (authentication, signature verification), reliability (idempotency, retries) and observability (per-transaction audit trail). The system is designed to integrate safely into larger platforms such as the FTTH Billing System.",
+      "technologies": ["Java", "Spring Boot", "REST API", "JWT", "Webhooks"],
+      "category": "Integration",
+      "featured": false,
+      "image": "assets/images/payment-gateway.webp",
+      "highlights": [
+        "Authenticated API surface",
+        "Idempotent transaction processing",
+        "Callback and webhook handling with signature verification",
+        "Per-transaction audit trail"
+      ],
+      "responsibilities": [
+        "Designed and implemented the payment integration API",
+        "Handled callbacks and webhook signature verification",
+        "Implemented idempotent transaction processing",
+        "Maintained per-transaction audit trail"
+      ]
+    },
+    {
+      "id": "ai-chatbot",
+      "title": "AI Chatbot",
+      "slug": "ai-chatbot",
+      "description": "AI-powered conversational application integrating an open-source language model through REST API.",
+      "longDescription": "An AI-powered conversational application integrating an open-source language model through a REST API. The backend manages conversation context, exposes a clean API for the front-end, and proxies requests to the underlying model. The integration focuses on a clean backend contract, sensible defaults for prompts and responses, and the ability to swap the underlying model without breaking the front-end. The front-end is intentionally minimal — a JavaScript interface that talks to the Spring Boot backend.",
+      "technologies": ["Java", "Spring Boot", "REST API", "LLM", "JavaScript"],
+      "category": "AI",
+      "featured": false,
+      "image": "assets/images/ai-chatbot.webp",
+      "highlights": [
+        "Backend abstraction over an open-source LLM",
+        "Conversation context management",
+        "Swappable underlying model",
+        "Minimal JavaScript front-end"
+      ],
+      "responsibilities": [
+        "Designed the chatbot backend API",
+        "Integrated an open-source LLM through REST",
+        "Managed conversation context",
+        "Built a minimal JavaScript front-end"
+      ]
+    }
+  ]
+}

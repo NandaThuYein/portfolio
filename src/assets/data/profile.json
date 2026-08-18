@@ -1,0 +1,31 @@
+{
+  "name": "Nanda Thu Yein",
+  "title": "Java & Backend Developer",
+  "tagline": "Backend systems • REST APIs • Enterprise applications",
+  "description": "Java & Backend Developer focused on reliable, secure and scalable backend systems, REST APIs and enterprise applications.",
+  "longDescription": "I am a Java & Backend Developer with a strong focus on building reliable, secure and scalable backend systems. I work primarily with Java, Spring Boot and PostgreSQL, designing REST APIs, integrating third-party services and modernizing legacy enterprise applications. I care about clean architecture, maintainable code and long-term system behavior — not just shipping features. My experience spans enterprise billing platforms, examination systems, form management systems and integration work such as payment gateways and webhooks.",
+  "location": "Yangon, Myanmar",
+  "email": "nandathuyein628@gmail.com",
+  "availability": "Open to backend / Java / Spring Boot opportunities",
+  "focusAreas": [
+    "Java",
+    "Spring Boot",
+    "REST APIs",
+    "PostgreSQL",
+    "MySQL",
+    "Microservices",
+    "Enterprise Systems"
+  ],
+  "terminal": {
+    "whoami": "nanda thu yein",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "PostgreSQL",
+      "REST API",
+      "Docker"
+    ],
+    "status": "Building reliable software."
+  }
+}

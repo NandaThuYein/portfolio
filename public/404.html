@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nanda | Java & Backend Developer</title>
+    <script>
+      // GitHub Pages 404 fallback for SPA deep-linking.
+      // This file is also copied to /404.html by the deploy workflow.
+      // When GitHub Pages serves this for an unknown path, we redirect
+      // to the requested path so Angular Router can take over.
+      (function () {
+        var pathSegmentsToKeep = 0; // for user/org pages; use 1 for project sub-paths
+        var l = window.location;
+        l.replace(
+          l.protocol +
+            '//' +
+            l.hostname +
+            (l.port ? ':' + l.port : '') +
+            l.pathname
+              .split('/')
+              .slice(0, 1 + pathSegmentsToKeep)
+              .join('/') +
+            '/?/' +
+            l.pathname
+              .slice(1)
+              .split('/')
+              .slice(pathSegmentsToKeep)
+              .join('/')
+              .replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting… If you are not redirected, <a href="/">click here</a>.</p>
+  </body>
+</html>

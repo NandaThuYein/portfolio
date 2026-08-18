@@ -1,0 +1,237 @@
+{
+  "skills": [
+    {
+      "name": "Java",
+      "category": "Backend",
+      "description": "Core Java, collections, concurrency, streams, JVM fundamentals.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Spring Boot",
+      "category": "Backend",
+      "description": "Building production-grade REST services and enterprise applications.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Spring Security",
+      "category": "Backend",
+      "description": "Authentication, authorization, OAuth2 resource servers and method security.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Spring Data JPA",
+      "category": "Backend",
+      "description": "Repository abstractions, query methods and pagination over JPA providers.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Hibernate",
+      "category": "Backend",
+      "description": "ORM mappings, lazy loading, caching and query tuning.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "REST API",
+      "category": "Backend",
+      "description": "Designing resource-oriented REST APIs, versioning, pagination and error contracts.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Microservices",
+      "category": "Backend",
+      "description": "Decomposing monoliths, service boundaries and inter-service communication.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "Quartz",
+      "category": "Backend",
+      "description": "Scheduling recurring jobs and managing cron-driven workflows.",
+      "experienceLevel": "Intermediate"
+    },
+
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "description": "Relational modeling, indexing, transactions and query optimization.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "MySQL",
+      "category": "Database",
+      "description": "Schema design, replication-aware modeling and performance tuning.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Oracle",
+      "category": "Database",
+      "description": "PL/SQL, packages and enterprise database integration.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "Redis",
+      "category": "Database",
+      "description": "Caching, distributed locks and rate-limit counters.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "SQL",
+      "category": "Database",
+      "description": "Query design, joins, window functions and analytical queries.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Flyway",
+      "category": "Database",
+      "description": "Versioned, repeatable database migrations integrated into the build.",
+      "experienceLevel": "Intermediate"
+    },
+
+    {
+      "name": "OAuth2",
+      "category": "Integration",
+      "description": "Authorization-code and client-credentials flows, token validation.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "JWT",
+      "category": "Integration",
+      "description": "Stateless authentication, signed tokens and scoped claims.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Payment Gateway",
+      "category": "Integration",
+      "description": "Authenticated payment APIs, transaction processing and idempotency.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Kafka",
+      "category": "Integration",
+      "description": "Event-driven pipelines, producers/consumers and topic design.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "RabbitMQ",
+      "category": "Integration",
+      "description": "Asynchronous messaging, queues and durable delivery.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "Webhooks",
+      "category": "Integration",
+      "description": "Designing and consuming webhook contracts with signature verification.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "REST",
+      "category": "Integration",
+      "description": "External API integration, retry/back-off and contract testing.",
+      "experienceLevel": "Advanced"
+    },
+
+    {
+      "name": "Angular",
+      "category": "Frontend",
+      "description": "Building maintainable single-page applications with TypeScript.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "TypeScript",
+      "category": "Frontend",
+      "description": "Strongly typed front-end and tooling code.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Frontend",
+      "description": "Vanilla JS, DOM and integration with backend services.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "SCSS",
+      "category": "Frontend",
+      "description": "Structured, themeable styling with variables and mixins.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "description": "Utility-first styling for rapid, consistent UI work.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "Thymeleaf",
+      "category": "Frontend",
+      "description": "Server-side rendering for Spring Boot applications.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "JSF",
+      "category": "Frontend",
+      "description": "Maintaining legacy Jakarta EE JSF interfaces.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "PrimeFaces",
+      "category": "Frontend",
+      "description": "Component library used alongside JSF for enterprise UI.",
+      "experienceLevel": "Intermediate"
+    },
+
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "description": "Containerizing services and reproducible local environments.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Git",
+      "category": "DevOps",
+      "description": "Branching strategies, code review and collaboration.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Linux",
+      "category": "DevOps",
+      "description": "Shell, processes, networking and service management.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "CI/CD",
+      "category": "DevOps",
+      "description": "GitHub Actions pipelines, automated builds and deployment.",
+      "experienceLevel": "Intermediate"
+    },
+    {
+      "name": "Cloud",
+      "category": "DevOps",
+      "description": "Deploying and operating services on cloud providers.",
+      "experienceLevel": "Intermediate"
+    },
+
+    {
+      "name": "IntelliJ IDEA",
+      "category": "Tools",
+      "description": "Primary IDE for Java/Kotlin and Spring development.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "GitHub",
+      "category": "Tools",
+      "description": "Source control, issue tracking and CI orchestration.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Maven",
+      "category": "Tools",
+      "description": "Build lifecycle, dependency management and multi-module projects.",
+      "experienceLevel": "Advanced"
+    },
+    {
+      "name": "Postman",
+      "category": "Tools",
+      "description": "Designing, testing and documenting REST APIs.",
+      "experienceLevel": "Advanced"
+    }
+  ]
+}
