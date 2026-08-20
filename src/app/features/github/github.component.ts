@@ -42,7 +42,7 @@ type State = 'loading' | 'ok' | 'error' | 'not-configured';
         <app-section-title
           eyebrow="// GitHub"
           title="Public repositories"
-          subtitle="Live from the GitHub public API. Only public data is shown — no tokens, no secrets."
+          subtitle="Live from the GitHub public."
         />
 
         <!-- Not configured -->

@@ -24,7 +24,7 @@ export class SeoService {
   private readonly meta = inject(Meta);
   private readonly router = inject(Router);
 
-  private readonly baseTitle = 'Nanda | Java & Backend Developer';
+  private readonly baseTitle = 'Nanda | Senior Software Developer';
   private readonly defaultDescription =
     'Nanda — Java & Backend Developer. I build reliable, secure and scalable backend systems, REST APIs and enterprise applications with Java, Spring Boot and PostgreSQL.';
   private readonly defaultImage = `${environment.siteUrl}/assets/images/profile.webp`;

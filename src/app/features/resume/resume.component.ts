@@ -50,12 +50,6 @@ import { SectionTitleComponent } from '../../shared/components/section-title/sec
         </div>
 
         <div class="update-note">
-          <p>
-            To update the CV, replace
-            <code>src/assets/resume/NandaThuYein-Resume.pdf</code>
-            with the new version, commit and push — GitHub Actions will rebuild
-            and redeploy the site.
-          </p>
           <a routerLink="/contact" class="btn btn-ghost">Looking for something specific? Contact me →</a>
         </div>
       </div>

@@ -10,7 +10,7 @@ export interface Experience {
   startDate: string;
   endDate: string | 'Present';
   location: string;
-  description: string;
+  descriptions: string[];
   responsibilities: string[];
   technologies: string[];
 }

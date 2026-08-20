@@ -36,7 +36,7 @@ import { EmptyStateComponent } from '../../shared/components/empty-state/empty-s
         <app-section-title
           eyebrow="// Experience"
           title="Professional timeline"
-          subtitle="A summary of roles and responsibilities. Replace placeholders in src/assets/data/experience.json with real entries."
+          subtitle="A summary of roles and responsibilities."
         />
 
         <ng-container *ngIf="state() === 'loading'">
@@ -69,7 +69,11 @@ import { EmptyStateComponent } from '../../shared/components/empty-state/empty-s
                     <span class="badge">{{ e.startDate }} – {{ e.endDate }}</span>
                   </header>
 
-                  <p class="entry__desc">{{ e.description }}</p>
+                  <div class="entry__desc" *ngIf="e.descriptions.length">
+                    <ul class="entry__list">
+                      <li *ngFor="let d of e.descriptions">{{ d }}</li>
+                    </ul>
+                  </div>
 
                   <div class="entry__sub" *ngIf="e.responsibilities.length">
                     <h4 class="entry__sub-title">Responsibilities</h4>

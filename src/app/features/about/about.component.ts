@@ -31,7 +31,7 @@ import { TechnologyBadgeComponent } from '../../shared/components/technology-bad
       <div class="container">
         <app-section-title
           eyebrow="// About"
-          title="{{ profile?.name || 'Nanda' }}"
+          title="{{ profile?.name || 'Nanda Thu Yein' }}"
           [subtitle]="profile?.tagline"
         />
 

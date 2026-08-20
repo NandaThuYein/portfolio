@@ -12,7 +12,7 @@ export const environment = {
    * Optional contact form endpoint (e.g. Formspree, Getform).
    * Leave empty to fall back to a `mailto:` link.
    */
-  contactFormUrl: '',
+  contactFormUrl: 'https://formspree.io/f/xjyblgvw',
   /**
    * Production site URL (your GitHub Pages URL or custom domain).
    * For a project repo: https://YOUR_USERNAME.github.io/nanda-portfolio

@@ -2,9 +2,9 @@
 <section class="hero">
   <div class="container hero__grid">
     <div class="hero__content">
-      <span class="section-eyebrow">{{ profile?.availability || 'Java & Backend Developer' }}</span>
-      <h1 class="hero__title">{{ profile?.name || 'Nanda' }}</h1>
-      <p class="hero__role">{{ profile?.title || 'Java & Backend Developer' }}</p>
+      <span class="section-eyebrow">{{ profile?.availability || 'Senior Software Developer' }}</span>
+      <h1 class="hero__title">{{ profile?.name || 'Nanda Thu Yein' }}</h1>
+      <p class="hero__role">{{ profile?.title || 'Senior Software Developer' }}</p>
       <p class="hero__desc">
         I build reliable, secure and scalable backend systems, REST APIs and
         enterprise applications.
@@ -128,14 +128,33 @@
       title="Career so far"
     />
     <div class="exp-preview">
-      <article class="exp-card card" *ngFor="let e of experiences">
-        <header class="exp-card__header">
-          <h3 class="exp-card__role">{{ e.position }}</h3>
-          <span class="badge">{{ e.startDate }} – {{ e.endDate }}</span>
-        </header>
-        <p class="exp-card__company">{{ e.company }} · {{ e.location }}</p>
-        <p class="exp-card__desc">{{ e.description }}</p>
-      </article>
+      @for (e of experiences(); track e.company + e.startDate) {
+        <article class="exp-card card">
+
+          <header class="exp-card__header">
+            <h3 class="exp-card__role">
+              {{ e.position }}
+            </h3>
+
+            <span class="badge">
+              {{ e.startDate }} – {{ e.endDate }}
+            </span>
+          </header>
+
+          <p class="exp-card__company">
+            {{ e.company }}
+
+            @if (e.location) {
+              <span> · {{ e.location }}</span>
+            }
+          </p>
+
+          <p class="exp-card__desc">
+            {{ e.descriptions.join(' ') }}
+          </p>
+
+        </article>
+      }
     </div>
     <div class="mt-6 text-center">
       <a routerLink="/experience" class="btn btn-outline">Full timeline →</a>

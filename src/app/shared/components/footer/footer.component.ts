@@ -22,8 +22,8 @@ import { SocialLinks } from '../../../core/models';
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <a routerLink="/" class="footer__name">Nanda</a>
-          <p class="footer__role">Java &amp; Backend Developer</p>
+          <a routerLink="/" class="footer__name">Nanda Thu Yein</a>
+          <p class="footer__role">Senior Software Developer</p>
         </div>
 
         <div class="footer__links">
@@ -39,7 +39,7 @@ import { SocialLinks } from '../../../core/models';
       </div>
       <div class="container footer__bottom">
         <p class="footer__copy">© {{ year }} Nanda Thu Yein. All rights reserved.</p>
-        <p class="footer__built">Built with Angular &amp; JSON.</p>
+        <p class="footer__built"></p>
       </div>
     </footer>
   `,

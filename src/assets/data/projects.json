@@ -9,7 +9,7 @@
       "technologies": ["Java", "Spring Boot", "PostgreSQL", "REST API", "Microservices"],
       "category": "Enterprise",
       "featured": true,
-      "image": "assets/images/ftth-billing.webp",
+      "image": "",
       "highlights": [
         "Product catalog with pricing plans and promotion rules",
         "Subscriber lifecycle including activation, suspension and termination",
@@ -32,7 +32,7 @@
       "technologies": ["Java", "Spring Boot", "REST API", "Database", "System Integration"],
       "category": "Enterprise",
       "featured": true,
-      "image": "assets/images/stock-exchange.webp",
+      "image": "",
       "highlights": [
         "Incremental enhancements without disrupting existing behavior",
         "Improved integration points with external systems",
@@ -56,7 +56,7 @@
       "category": "Application System",
       "featured": true,
       "website": "https://jlpt-maja.org.mm/",
-      "image": "assets/images/jlpt.webp",
+      "image": "",
       "highlights": [
         "Distinct workflows for Individual applicants",
         "Validation rules tailored to each applicant type",
@@ -80,7 +80,7 @@
       "category": "Application System",
       "featured": true,
       "website": "https://schoolform.jlpt-maja.org.mm/",
-      "image": "assets/images/jlpt.webp",
+      "image": "",
       "highlights": [
         "Distinct workflows for School applicants",
         "Validation rules tailored to each applicant type",
@@ -103,7 +103,7 @@
       "technologies": ["Java", "Spring Boot", "REST API", "Database", "Allocation Management"],
       "category": "Management System",
       "featured": true,
-      "image": "assets/images/examiner-allocation.webp",
+      "image": "",
       "highlights": [
         "Examiner profile and availability management",
         "Examination requirement capture",
@@ -126,7 +126,7 @@
       "technologies": ["Java", "Spring Boot", "Jakarta", "JSF", "PrimeFaces", "MyBatis"],
       "category": "Migration",
       "featured": false,
-      "image": "assets/images/sms-migration.webp",
+      "image": "",
       "highlights": [
         "Incremental migration preserving business logic",
         "Behavioral parity for data-access layer",
@@ -149,7 +149,7 @@
       "technologies": ["Java", "Spring Boot", "REST API", "JWT", "Webhooks"],
       "category": "Integration",
       "featured": false,
-      "image": "assets/images/payment-gateway.webp",
+      "image": "",
       "highlights": [
         "Authenticated API surface",
         "Idempotent transaction processing",
@@ -172,7 +172,7 @@
       "technologies": ["Java", "Spring Boot", "REST API", "LLM", "JavaScript"],
       "category": "AI",
       "featured": false,
-      "image": "assets/images/ai-chatbot.webp",
+      "image": "",
       "highlights": [
         "Backend abstraction over an open-source LLM",
         "Conversation context management",

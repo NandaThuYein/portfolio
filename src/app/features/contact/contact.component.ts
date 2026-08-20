@@ -27,6 +27,7 @@ import { SocialLinksComponent } from '../../shared/components/social-links/socia
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
 
 /** Minimum length for free-text fields. */
+const NAME_MIN_LEN = 5;
 const MIN_LEN = 10;
 const MAX_MESSAGE = 2000;
 
@@ -156,18 +157,12 @@ const MAX_MESSAGE = 2000;
                   {{ submitState() === 'submitting' ? 'Sending…' : 'Send message' }}
                 </button>
                 <span class="form-status" *ngIf="submitState() === 'success'">
-                  ✓ Message ready — opening your email client…
+                  ✓ Message sent successfully!
                 </span>
                 <span class="form-status form-status--error" *ngIf="submitState() === 'error'">
                   ✗ Unable to send. Please email me directly.
                 </span>
               </div>
-
-              <p class="form-note" *ngIf="!contactFormUrl">
-                Submissions open your email client with the message pre-filled.
-                To use a form backend, set <code>contactFormUrl</code> in
-                <code>environment.ts</code>.
-              </p>
             </form>
           </div>
         </div>
@@ -281,7 +276,7 @@ export class ContactComponent implements OnInit {
   submitState = signal<SubmitState>('idle');
 
   form = this.fb.nonNullable.group({
-    name: ['', [Validators.required, Validators.minLength(MIN_LEN)]],
+    name: ['', [Validators.required, Validators.minLength(NAME_MIN_LEN)]],
     email: ['', [Validators.required, Validators.email]],
     subject: ['', [Validators.required, Validators.minLength(MIN_LEN)]],
     message: ['', [Validators.required, Validators.minLength(MIN_LEN), Validators.maxLength(MAX_MESSAGE)]]

@@ -12,7 +12,7 @@ export const environment = {
    * Optional contact form endpoint (e.g. Formspree, Getform).
    * Leave empty to fall back to a `mailto:` link.
    */
-  contactFormUrl: '',
+  contactFormUrl: 'https://formspree.io/f/xjyblgvw',
   /** Site URL used for canonical / Open Graph tags in dev. */
   siteUrl: 'http://localhost:4200',
   /** Repository name — used as the GitHub Pages base href. */

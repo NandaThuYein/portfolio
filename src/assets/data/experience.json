@@ -3,14 +3,21 @@
     {
       "company": "DIR-ACE Technology Ltd.(DAT)",
       "position": "Senior Programmer",
-      "startDate": "20-4-2022",
+      "startDate": "20-4-2023",
       "endDate": "Present",
-      "location": "Building 19, 3rd Floor, MICT Park, Hlaing Township, Yangon, Myanmar",
-      "description": "Replace this placeholder with a real role summary. Describe the team you work with, the kind of systems you build and the main stakeholders. Keep it factual — do not invent companies, dates or achievements.",
+      "location": "",
+      "descriptions": [
+        "Developed and maintained scalable backend systems for enterprise clients.",
+        "Designed secure, high-performance backend features.",
+        "Integrated online payment gateways and third-party APIs.",
+        "Automated deployment pipelines and testing workflows.",
+        "Managed SIT, UAT, and Production releases.",
+        "Key Technologies: Java, Spring Boot, Docker, PostgreSQL"
+      ],
       "responsibilities": [
-        "YOUR_RESPONSIBILITY_1 — e.g. Designed and implemented REST APIs for an enterprise billing platform.",
-        "YOUR_RESPONSIBILITY_2 — e.g. Integrated a payment gateway with webhook handling and idempotency.",
-        "YOUR_RESPONSIBILITY_3 — e.g. Modernized a legacy JSF / PrimeFaces application to Spring Boot."
+        "Designed and implemented REST APIs for an enterprise billing platform.",
+        "Integrated a payment gateway with webhook handling and idempotency.",
+        "Modernized a legacy JSF / PrimeFaces application to Spring Boot."
       ],
       "technologies": ["Java", "Spring Boot", "PostgreSQL", "REST API", "Docker"]
     }

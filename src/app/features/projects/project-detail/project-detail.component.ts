@@ -106,7 +106,7 @@ type State = 'loading' | 'ok' | 'error' | 'not-found';
               </article>
 
               <aside class="body__aside">
-                <div class="card">
+                <div class="card" *ngIf="p.website">
                   <h3 class="aside-title">Links</h3>
                   <div class="aside-actions">
                     <a *ngIf="p.githubUrl" [href]="p.githubUrl" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub →</a>

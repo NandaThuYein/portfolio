@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
   profile?: Profile;
   featured: Project[] = [];
   skillGroups: SkillCategoryGroup[] = [];
-  experiences: Experience[] = [];
+  experiences = signal<Experience[]>([]);
   social?: SocialLinks;
   loading = signal(true);
 
@@ -75,9 +75,14 @@ export class HomeComponent implements OnInit {
     });
 
     this.skillSvc.getGroupedSkills().subscribe((g) => (this.skillGroups = g));
-    this.experienceSvc
-      .getExperience()
-      .subscribe((e) => (this.experiences = e.slice(0, 2)));
+    this.experienceSvc.getExperience().subscribe({
+      next: (e) => {
+        this.experiences.set(e.slice(0, 2));
+      },
+      error: (err) => {
+        console.error('Experience error:', err);
+      }
+    });
   }
 
   get cvPath(): string {

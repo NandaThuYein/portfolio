@@ -27,7 +27,7 @@ interface NavLink {
       <div class="container navbar__inner">
         <a routerLink="/" class="navbar__brand" aria-label="Nanda — home">
           <span class="navbar__brand-mark">&lt;/&gt;</span>
-          <span class="navbar__brand-name">Nanda</span>
+          <span class="navbar__brand-name">Nanda Thu Yein</span>
         </a>
 
         <button
